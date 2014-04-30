@@ -152,6 +152,7 @@ body {
 }
 
 #todoapp footer {
+	clear: both;
 	display: none;
 	margin: 0 -20px -20px -20px;
 	overflow: hidden;
