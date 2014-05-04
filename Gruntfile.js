@@ -48,18 +48,23 @@ module.exports = function(grunt) {
                 ]   
             }
             
+        },
+        cssmin: {
+            minify: {expand: true, cwd: 'src/css/', src: ['*.css'], dest: 'css/',ext: '.min.css'
+          }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
 
 
     grunt.registerTask('default', "Building the project",function () {
-        var tasksList = ['clean', 'copy','uglify', 'requirejs'];
+        var tasksList = ['clean', 'copy','uglify', 'requirejs', 'cssmin'];
         grunt.task.run(tasksList);
     });
 };
