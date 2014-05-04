@@ -39,7 +39,6 @@ module.exports = function(grunt) {
                 ]
             },
             img: {expand: true, flatten: true, src: 'src/img/*', dest: 'img/'},
-            css: {expand: true, flatten: true, src: 'src/css/*', dest: 'css/'}
         },
         uglify: {
             build: {
