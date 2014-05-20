@@ -1,7 +1,7 @@
-yandex-jira
+not-yet-jira
 ===========
 
-Yandex test task manager
+Kind of task manager
 
 install npm and grunt CLI
 
