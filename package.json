@@ -1,7 +1,7 @@
 {
   "name": "ya",
   "version": "0.0.0",
-  "description": "Yandex test project",
+  "description": "Kind of task manager",
   "main": "index.html",
   "scripts": {
     "postinstall": "grunt"
