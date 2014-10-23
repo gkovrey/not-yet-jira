@@ -7,10 +7,8 @@ requirejs.config({
         'backbone': 'vendor/backbone',
         'backbone.localStorage': 'vendor/backbone.localStorage',
         'json2': 'vendor/json2',
-        'model': 'app/modules/task/model',
-        'view': 'app/modules/task/view',
-        'collection': 'app/modules/task/collection',
-        'application' : 'app/app'
+        'application' : 'app/app',
+        'router' : 'app/router'
     },
     shim: {
         'jquery': {

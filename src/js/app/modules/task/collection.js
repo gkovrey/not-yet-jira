@@ -2,7 +2,7 @@ define(function (require, exports, module) {
     'use strict';
     var Backbone, Task;
     Backbone = require('backbone');
-    Task = require('model').Task;
+    Task = require('app/modules/task/model').Task;
     
     Backbone.LocalStorage = require('backbone.localStorage');
 
@@ -28,4 +28,4 @@ define(function (require, exports, module) {
         }
 
     });
-})
+});

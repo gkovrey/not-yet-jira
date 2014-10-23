@@ -35,6 +35,7 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, flatten: true, src: ['src/js/app/modules/task/*.js',], dest: 'js/app/modules/task/' },
                     {expand: true, flatten: true, src: ['src/js/app/app.js'], dest: 'js/app'},
+                    {expand: true, flatten: true, src: ['src/js/app/router.js'], dest: 'js/app'},
                     {expand: true, flatten: true, src: ['src/js/config.js', 'src/js/main.js'], dest: 'js/' },
                 ]
             },

@@ -1,15 +1,12 @@
 define(function(require, exports, module) {
 	'use strict';
-	var Task, TaskCollection, tasks, TaskView, taskView, Application, application
+
+	var Backbone = require('backbone');
+	var Router = require('router').Router;
+	var router = new Router();
+
+
+	Backbone.history.start();
+
 	
-	TaskCollection = require('collection').TaskCollection;
-    TaskView = require('view').TaskView;
-
-    tasks = new TaskCollection();
-
-	Application = require('application').AppView;
-	application = new Application({
-		'tasks' : tasks,
-		'taskView' : TaskView
-	});
 })
